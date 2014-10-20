@@ -76,7 +76,7 @@ class TextureSetRule(Rule):
 
       # Nasty, required to work around a bug in PIL when writing JPGs with
       # optimize and quality over 85
-      import ImageFile
+      from PIL import ImageFile
       ImageFile.MAXBLOCK = 2000000
 
       ds = []
