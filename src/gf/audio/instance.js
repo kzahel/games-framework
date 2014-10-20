@@ -122,7 +122,7 @@ gf.audio.Instance.Ctor;
  */
 gf.audio.Instance.prototype.play = function(opt_delay) {
   if (this.sourceNode) {
-    this.sourceNode.noteGrainOn(
+    this.sourceNode.start(
         opt_delay || 0,
         this.variant.start / 1000,
         this.variant.duration / 1000);
